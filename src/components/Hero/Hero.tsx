@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           Manage makes it simple for software teams to plan day-to-day tasks
           while keeping the larger team goals in view.
         </p>
-        <Button className="tablet:self-start" />
+        <Button />
       </article>
       <figure className="order-1 tablet:order-2 flex-1 max-w-full tablet:max-w-1/2">
         <img

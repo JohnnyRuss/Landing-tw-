@@ -33,10 +33,10 @@ const data = [
 
 const CardsList: React.FC = () => {
   return (
-    <div className="flex flex-col flex-wrap items-center gap-20 mt-16 px-3 tablet:px-8 tablet-lg:px-16 tablet:flex-row desktop:gap-8">
+    <div className="flex flex-col flex-wrap items-center gap-20 mt-16 px-3 tablet:px-8 tablet-lg:px-16 tablet:flex-row desktop:gap-12">
       {data.map((item, i) => (
         <div
-          className="group/card flex-1 min-w-[250px] hover:-mt-6 transition-all duration-200 hover:shadow-xl flex flex-col items-center bg-app-light-gray rounded-2xl shadow-md px-6 pb-6 cursor-pointer"
+          className="group/card flex-1 min-h-[290px] min-w-[250px] hover:-mt-6 transition-all duration-200 hover:shadow-xl flex flex-col items-center bg-app-light-gray rounded-2xl shadow-md px-6 pb-6 cursor-pointer"
           key={`feedbCK--${i}`}
         >
           <figure className="relative w-[80px] h-[80px] aspect-square -translate-y-1/2 shadow-md rounded-full ">
