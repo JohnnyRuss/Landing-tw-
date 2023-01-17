@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { Logo, Button } from "../Layouts";
 import Burger from "./Burger";
@@ -24,11 +25,13 @@ const Navigation: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <nav className="sticky top-0 z-30 bg-white max-w-[1280px] mx-auto flex items-center justify-between py-6 px-3 desktop:px-0">
-      <Logo />
-      <NavList isOpen={isOpen} handleNav={() => setIsOpen(false)} />
-      <Button className="hidden tablet:block" />
-      <Burger isOpen={isOpen} handleNav={() => setIsOpen((prev) => !prev)} />
+    <nav className="sticky top-0 z-30 bg-white py-6 px-3 desktop:px-0">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between">
+        <Logo />
+        <NavList isOpen={isOpen} handleNav={() => setIsOpen(false)} />
+        <Button className="hidden tablet:block" />
+        <Burger isOpen={isOpen} handleNav={() => setIsOpen((prev) => !prev)} />
+      </div>
     </nav>
   );
 };
